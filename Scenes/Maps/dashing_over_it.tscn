@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://47h07xwphs3h"]
+
+[ext_resource type="PackedScene" uid="uid://8u3lxx6x1mjo" path="res://Scenes/Entities/Player.tscn" id="1_prni5"]
+[ext_resource type="PackedScene" uid="uid://pvb5iwjoobdn" path="res://Scenes/Entities/Wall.tscn" id="2_sgyag"]
+
+[node name="Dashing over it" type="SGFixedNode2D"]
+position = Vector2(16, 4)
+
+[node name="Player" parent="." instance=ExtResource("1_prni5")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(3, 3)
+
+[node name="Wall" parent="." instance=ExtResource("2_sgyag")]
+position = Vector2(37, -1)
